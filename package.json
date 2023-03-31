@@ -13,7 +13,8 @@
     "tailwind:build": "tailwindcss -c tailwind.config.js -i assets/application.css -o dist/tailwind.min.css -m",
     "tailwind:watch": "tailwindcss -c tailwind.config.js -i assets/application.css -o dist/tailwind.min.css -m --watch",
     "dev": "bundle exec jekyll serve",
-    "open": "open http://localhost:4000/stimulus-tailwind-components/"
+    "open": "open http://localhost:4000/stimulus-tailwind-components/",
+    "webhint": "hint http://localhost:4000/stimulus-tailwind-playground/"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
+    "hint": "^7.1.8",
     "markdownlint": "^0.28.0",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.6",

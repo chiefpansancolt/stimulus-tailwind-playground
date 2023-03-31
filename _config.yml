@@ -14,9 +14,7 @@ commonmark:
   extensions: ['strikethrough', 'autolink', 'table', 'tagfilter', 'tasklist']
 highlighter: rouge
 
-copyright: Copyright &copy; 2022 Christopher Pezza, All rights reserved.
-
-version: 0.1.1
+copyright: Copyright &copy; 2023 Christopher Pezza, All rights reserved.
 
 links:
   home: /

@@ -12,15 +12,15 @@ details: The Switch component enables you to show an on/off switch also known as
 Mode Switch Toggle" subheader="This is pared with the Theme Component to make possible without the
 need for a specific controller for" codeId="darkModeToggle" %} {% capture simpleToggleSnippet %} {%
 include_relative snippets/simple.html %} {% endcapture %} {% include example.html
-content=simpleToggleSnippet headerId="simpleToggle" header="Simple Toggle" codeId="simpleToggle" %}
-{% capture inputToggleSnippet %} {% include_relative snippets/input.html %} {% endcapture %} {%
-capture inputToggleSnippet2 %}
+content=simpleToggleSnippet headerId="simpleToggleHeader" header="Simple Toggle"
+codeId="simpleToggle" %} {% capture inputToggleSnippet %} {% include_relative snippets/input.html %}
+{% endcapture %} {% capture inputToggleSnippet2 %}
 <div>
   <span class="mr-1 font-bold">Input Value:</span>
   <span id="input-output"></span>
 </div>
 {% endcapture %} {% include example.html content=inputToggleSnippet content2=inputToggleSnippet2
-headerId="inputToggle" header="Input Toggle" codeId="inputToggle" %}
+headerId="inputToggleHeader" header="Input Toggle" codeId="inputToggle" %}
 
 <script type="text/javascript">
   function inputChanged() {

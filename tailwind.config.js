@@ -1,12 +1,11 @@
 module.exports = {
   content: [
     "./_layouts/**/*.{html,md}",
+    "./_includes/**/*.html",
     "./_data/**/*.yml",
-    "./docs/**/*.{html,md}",
-    "./playgrounds/**/*.{html,md}",
+    "./playground/**/*.{html,md}",
     "./index.html",
     "./404.html",
-    "./about.md",
   ],
   darkMode: "class",
   theme: {

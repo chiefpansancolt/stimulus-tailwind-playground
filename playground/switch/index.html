@@ -7,29 +7,34 @@ subheader: Switch Component (Toggle) Examples
 details: The Switch component enables you to show an on/off switch also known as a toggle, that work with the theme component and supports inputs.
 ---
 
-{% capture darkModeToggleSnippet %} {% include_relative snippets/darkmode.html %} {% endcapture %} {% include example.html content=darkModeToggleSnippet headerId="darkModeSwitchToggle" header="Dark Mode Switch Toggle"
-subheader="This is pared with the Theme Component to make possible without the need for a specific controller for" codeId="darkModeToggle" %} {% capture simpleToggleSnippet %} {% include_relative
-snippets/simple.html %} {% endcapture %} {% include example.html content=simpleToggleSnippet headerId="simpleToggle" header="Simple Toggle" codeId="simpleToggle" %} {% capture inputToggleSnippet %} {% include_relative
-snippets/input.html %} {% endcapture %} {% capture inputToggleSnippet2 %}
+{% capture darkModeToggleSnippet %} {% include_relative snippets/darkmode.html %} {% endcapture %}
+{% include example.html content=darkModeToggleSnippet headerId="darkModeSwitchToggle" header="Dark
+Mode Switch Toggle" subheader="This is pared with the Theme Component to make possible without the
+need for a specific controller for" codeId="darkModeToggle" %} {% capture simpleToggleSnippet %} {%
+include_relative snippets/simple.html %} {% endcapture %} {% include example.html
+content=simpleToggleSnippet headerId="simpleToggleHeader" header="Simple Toggle"
+codeId="simpleToggle" %} {% capture inputToggleSnippet %} {% include_relative snippets/input.html %}
+{% endcapture %} {% capture inputToggleSnippet2 %}
 <div>
   <span class="mr-1 font-bold">Input Value:</span>
   <span id="input-output"></span>
 </div>
-{% endcapture %} {% include example.html content=inputToggleSnippet content2=inputToggleSnippet2 headerId="inputToggle" header="Input Toggle" codeId="inputToggle" %}
+{% endcapture %} {% include example.html content=inputToggleSnippet content2=inputToggleSnippet2
+headerId="inputToggleHeader" header="Input Toggle" codeId="inputToggle" %}
 
 <script type="text/javascript">
   function inputChanged() {
-    document.getElementById('input-output').innerHTML = document.getElementById('myinput').checked
+    document.getElementById("input-output").innerHTML = document.getElementById("myinput").checked;
   }
 
-  const darkModeToggleCode = `{% include_relative snippets/darkmode.html %}`
-  const simpleToggleCode = `{% include_relative snippets/simple.html %}`
-  const inputToggleCode = `{% include_relative snippets/input.html %}`
+  const darkModeToggleCode = `{% include_relative snippets/darkmode.html %}`;
+  const simpleToggleCode = `{% include_relative snippets/simple.html %}`;
+  const inputToggleCode = `{% include_relative snippets/input.html %}`;
 
-  const darkModeToggleHtml = Prism.highlight(darkModeToggleCode, Prism.languages.html, 'html')
-  const simpleToggleHtml = Prism.highlight(simpleToggleCode, Prism.languages.html, 'html')
-  const inputToggleHtml = Prism.highlight(inputToggleCode, Prism.languages.html, 'html')
-  document.querySelector('#inputToggle').innerHTML = inputToggleHtml
-  document.querySelector('#simpleToggle').innerHTML = simpleToggleHtml
-  document.querySelector('#darkModeToggle').innerHTML = darkModeToggleHtml
+  const darkModeToggleHtml = Prism.highlight(darkModeToggleCode, Prism.languages.html, "html");
+  const simpleToggleHtml = Prism.highlight(simpleToggleCode, Prism.languages.html, "html");
+  const inputToggleHtml = Prism.highlight(inputToggleCode, Prism.languages.html, "html");
+  document.querySelector("#inputToggle").innerHTML = inputToggleHtml;
+  document.querySelector("#simpleToggle").innerHTML = simpleToggleHtml;
+  document.querySelector("#darkModeToggle").innerHTML = darkModeToggleHtml;
 </script>

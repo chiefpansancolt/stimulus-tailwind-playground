@@ -22,10 +22,10 @@ For more details on how to install and use during development please see [https:
 </p>
 
 ### Ruby
+
 <p>
   <img src="https://img.shields.io/badge/ruby-3.1.2-red.svg" />
 </p>
-
 
 ## Author
 

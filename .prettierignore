@@ -6,3 +6,4 @@ bin/
 _site
 dist
 vendor
+.rubocop.yml

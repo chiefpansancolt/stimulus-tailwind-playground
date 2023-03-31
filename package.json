@@ -1,0 +1,40 @@
+{
+  "name": "stimulus-tailwind-playground",
+  "version": "0.5.0",
+  "private": true,
+  "description": "Playground for stimulus-tailwind-components to view and see live examples.",
+  "scripts": {
+    "lint": "./bin/lint",
+    "lint:markdown": "markdownlint .github/**/*.md README.md docs/**/*.md -c .markdownlint.yml",
+    "lint:javascript": "eslint src esbuild.js esbuild-playground.js",
+    "lint:ruby": "rubocop",
+    "format": "prettier './**/*.{css,js,json,yml,md,html}' -l",
+    "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' -w",
+    "tailwind:build": "tailwindcss -c tailwind.config.js -i assets/application.css -o dist/tailwind.min.css -m",
+    "tailwind:watch": "tailwindcss -c tailwind.config.js -i assets/application.css -o dist/tailwind.min.css -m --watch",
+    "dev": "bundle exec jekyll serve",
+    "open": "open http://localhost:4000/stimulus-tailwind-components/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiefpansancolt/stimulus-tailwind-playground.git"
+  },
+  "keywords": [
+    "stimulus-tailwind-components",
+    "playground"
+  ],
+  "author": "Christopher Pezza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiefpansancolt/stimulus-tailwind-playground/issues"
+  },
+  "homepage": "https://github.com/chiefpansancolt/stimulus-tailwind-playground#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "markdownlint": "^0.28.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "tailwindcss": "^3.3.1"
+  }
+}

@@ -7,11 +7,13 @@ subheader: Theme Component (Dark Mode Toggle) Examples
 details: The Theme component gives you the ability to change from light mode to dark mode.
 ---
 
-{% capture darkModeSnippet %} {% include_relative snippets/base.html %} {% endcapture %} {% include example.html content=darkModeSnippet headerId="standardSiteUsage" header="Standard Site Usage" codeId="base" %}
+{% capture darkModeSnippet %} {% include_relative snippets/base.html %} {% endcapture %} {% include
+example.html content=darkModeSnippet headerId="standardSiteUsage" header="Standard Site Usage"
+codeId="base" %}
 
 <script type="text/javascript">
-  const baseCode = `{% include_relative snippets/full.html %}`
+  const baseCode = `{% include_relative snippets/full.html %}`;
 
-  const baseHtml = Prism.highlight(baseCode, Prism.languages.html, 'html')
-  document.querySelector('#base').innerHTML = baseHtml
+  const baseHtml = Prism.highlight(baseCode, Prism.languages.html, "html");
+  document.querySelector("#base").innerHTML = baseHtml;
 </script>

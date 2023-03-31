@@ -1,4 +1,11 @@
-# Stimulus Tailwind Playground
+![Logo](/.github/stimulus-tailwind-logo.png)
+
+# StimulusJS Tailwind Playground
+
+![npm](https://img.shields.io/npm/v/stimulus-tailwind-components?logo=NPM&style=for-the-badge)
+![npm](https://img.shields.io/npm/dm/stimulus-tailwind-components?logo=NPM&style=for-the-badge)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/chiefpansancolt/stimulus-tailwind-components?label=Release&logo=github&style=for-the-badge)
+[![Discord](https://img.shields.io/discord/450095227185659905?color=yellow&label=Discord&logo=discord&style=for-the-badge)](https://discord.gg/pBxGpfrmD4)
 
 [![GitHub Workflow Deploy Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/stimulus-tailwind-playground/deploy.yml?label=Deploy&logo=github&style=flat-square)](https://github.com/chiefpansancolt/stimulus-tailwind-playground/actions/workflows/deploy.yml)
 [![GitHub Workflow Lint Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/stimulus-tailwind-playground/lints.yml?label=Lints&logo=github&style=flat-square)](https://github.com/chiefpansancolt/stimulus-tailwind-playground/actions/workflows/lints.yml)

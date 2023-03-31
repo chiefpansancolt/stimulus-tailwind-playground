@@ -1,4 +1,4 @@
-![Logo](/.github/stimulus-tailwind-logo.png)
+![Logo](/.github/Stimulus-tailwind%20Logo.png)
 
 # StimulusJS Tailwind Playground
 

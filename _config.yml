@@ -1,9 +1,10 @@
 title: Stimulus Tailwind Components Playground
 email: github@chiefpansancolt.dev
 description: >-
-  Documentation for Stimulus Tailwind Components, a node
+  Playground for Stimulus Tailwind Components, a node
   package that provides StimulusJS build controllers for
-  Tailwind based Components, currently supports (Notifications).
+  Tailwind based Components, currently supports
+  (Notifications, Theme, Switch, Modal).
 domain: chiefpansancolt.github.io
 url: https://chiefpansancolt.github.io
 baseurl: /stimulus-tailwind-playground/
@@ -13,6 +14,8 @@ markdown: CommonMarkGhPages
 commonmark:
   extensions: ["strikethrough", "autolink", "table", "tagfilter", "tasklist"]
 highlighter: rouge
+plugins:
+  - jekyll-seo-tag
 
 copyright: Copyright &copy; 2023 Christopher Pezza, All rights reserved.
 

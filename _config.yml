@@ -11,7 +11,7 @@ twitter_username: chiefpansancolt
 github_username: chiefpansancolt
 markdown: CommonMarkGhPages
 commonmark:
-  extensions: ['strikethrough', 'autolink', 'table', 'tagfilter', 'tasklist']
+  extensions: ["strikethrough", "autolink", "table", "tagfilter", "tasklist"]
 highlighter: rouge
 
 copyright: Copyright &copy; 2023 Christopher Pezza, All rights reserved.

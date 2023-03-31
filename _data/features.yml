@@ -60,7 +60,7 @@
     </svg>
 - title: Switch
   order: 3
-  version: 0.x.0
+  version: 0.5.0
   details: A toggle to show a switch.
   released: true
   linkName: switch
@@ -118,7 +118,7 @@
     </svg>
 - title: Modal
   order: 4
-  version: 0.x.0
+  version: 0.5.0
   details: Ability to show and hide a modal.
   released: true
   linkName: modal

@@ -4,7 +4,7 @@ layout: default
 
 <body class="h-full bg-gray-50 text-slate-500 dark:bg-slate-900 dark:text-slate-400">
   <script src="{{ '/dist/prism.min.js' | relative_url }}"></script>
-  <div class="min-h-full">
+  <div class="">
     <header class="border-b border-slate-600 shadow-sm lg:static lg:overflow-y-visible">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
@@ -36,8 +36,8 @@ layout: default
         </div>
         {% if page.url == "/" %} {% assign classes = "col-span-10" %} {% else %} {% assign classes =
         "lg:col-span-9 xl:col-span-7" %} {% endif %}
-        <main class="{{ classes }}">
-          <header class="relative z-20">
+        <main class="min-h-[85vh] {{ classes }}">
+          <header class="relative z-20 h-36">
             <div>
               <p
                 class="mb-2 text-sm font-semibold leading-6 text-emerald-500 dark:text-emerald-400"
@@ -54,7 +54,7 @@ layout: default
             </div>
             <p class="mt-2 text-lg text-slate-700 dark:text-slate-400">{{ page.details }}</p>
           </header>
-          <section class="relative mb-16 mt-8">
+          <section class="relative flex-grow">
             <div
               aria-live="assertive"
               class="pointer-events-none fixed inset-0 top-10 z-40 flex items-end px-4 py-6 sm:items-start sm:p-6"
@@ -82,10 +82,10 @@ layout: default
               {% endif %}
             </div>
           </section>
-          <footer class="mt-16 text-sm leading-6">
+          <footer class="text-sm leading-6 sticky top-[90vh] pt-10">
             {% if page.url != "/" %} {% include footer_nav.html %} {% endif %}
             <div
-              class="justify-between border-t border-slate-200 pb-28 pt-10 text-slate-500 dark:border-slate-200/5 sm:flex"
+              class="justify-between border-t border-slate-200 pt-10 text-slate-500 dark:border-slate-200/5 sm:flex"
             >
               <div class="mb-6 sm:mb-0 sm:flex">
                 <p>{{ site.copyright }}</p>

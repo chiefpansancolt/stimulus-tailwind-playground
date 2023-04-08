@@ -5,9 +5,9 @@ description: >-
   package that provides StimulusJS build controllers for
   Tailwind based Components, currently supports
   (Notifications, Theme, Switch, Modal).
-domain: chiefpansancolt.github.io
-url: https://chiefpansancolt.github.io
-baseurl: /stimulus-tailwind-playground/
+domain: chiefpansancolt.dev
+url: https://stimulus-tailwind-play.chiefpansancolt.dev
+baseurl: /
 twitter_username: chiefpansancolt
 github_username: chiefpansancolt
 markdown: CommonMarkGhPages

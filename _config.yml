@@ -17,6 +17,28 @@ highlighter: rouge
 plugins:
   - jekyll-seo-tag
 
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "playground/modal/snippets"
+    values:
+      sitemap: false
+  - scope:
+      path: "playground/notification/snippets"
+    values:
+      sitemap: false
+  - scope:
+      path: "playground/switch/snippets"
+    values:
+      sitemap: false
+  - scope:
+      path: "playground/theme/snippets"
+    values:
+      sitemap: false
+
 copyright: Copyright &copy; 2023 Christopher Pezza, All rights reserved.
 
 links:

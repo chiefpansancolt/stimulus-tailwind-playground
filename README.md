@@ -11,7 +11,7 @@
 [![GitHub Workflow Lint Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/stimulus-tailwind-playground/lints.yml?label=Lints&logo=github&style=flat-square)](https://github.com/chiefpansancolt/stimulus-tailwind-playground/actions/workflows/lints.yml)
 [![CodeQL](https://github.com/chiefpansancolt/stimulus-tailwind-playground/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chiefpansancolt/stimulus-tailwind-playground/actions/workflows/github-code-scanning/codeql)
 
-This is where you can find the ability to see examples in a live environment for available components or use to help develop and contribute. Check it out [here](https://chiefpansancolt.github.io/stimulus-tailwind-playground).
+This is where you can find the ability to see examples in a live environment for available components or use to help develop and contribute. Check it out [here](https://stimulus-tailwind-play.chiefpansancolt.dev).
 
 ## Development
 

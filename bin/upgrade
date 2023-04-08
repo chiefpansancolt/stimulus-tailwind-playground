@@ -8,7 +8,7 @@ yarn upgrade --latest
 
 echo ""
 echo "== Running Bundle Upgrade =="
-bundle upgrade
+bundle update
 
 echo ""
 echo "== Upgrade Finished =="

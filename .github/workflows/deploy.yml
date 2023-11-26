@@ -23,6 +23,16 @@ jobs:
         with:
           version: 8
           run_install: false
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+
+      - name: Install Ruby Gem dependencies
+        run: |
+          gem install bundler -v 2.4.22
+          bundle install --jobs 4 --retry 3
 
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest

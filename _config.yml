@@ -12,30 +12,30 @@ twitter_username: chiefpansancolt
 github_username: chiefpansancolt
 markdown: CommonMarkGhPages
 commonmark:
-  extensions: ["strikethrough", "autolink", "table", "tagfilter", "tasklist"]
+  extensions: ['strikethrough', 'autolink', 'table', 'tagfilter', 'tasklist']
 highlighter: rouge
 plugins:
   - jekyll-seo-tag
 
 defaults:
   - scope:
-      path: "assets"
+      path: 'assets'
     values:
       sitemap: false
   - scope:
-      path: "playground/modal/snippets"
+      path: 'playground/modal/snippets'
     values:
       sitemap: false
   - scope:
-      path: "playground/notification/snippets"
+      path: 'playground/notification/snippets'
     values:
       sitemap: false
   - scope:
-      path: "playground/switch/snippets"
+      path: 'playground/switch/snippets'
     values:
       sitemap: false
   - scope:
-      path: "playground/theme/snippets"
+      path: 'playground/theme/snippets'
     values:
       sitemap: false
 

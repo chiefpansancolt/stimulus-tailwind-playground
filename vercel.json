@@ -1,0 +1,8 @@
+{
+  "framework": "jekyll",
+  "git": {
+    "deploymentEnabled": {
+      "main": false
+    }
+  }
+}

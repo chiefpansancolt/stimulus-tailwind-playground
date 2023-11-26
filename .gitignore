@@ -5,3 +5,4 @@ _site
 node_modules/
 hint-report/
 Gemfile.lock
+.vercel

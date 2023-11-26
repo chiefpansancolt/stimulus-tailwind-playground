@@ -8,3 +8,4 @@ dist
 vendor
 .rubocop.yml
 hint-report/
+pnpm-lock.yaml

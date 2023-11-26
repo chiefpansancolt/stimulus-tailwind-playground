@@ -24,17 +24,17 @@ headerId="inputToggleHeader" header="Input Toggle" codeId="inputToggle" %}
 
 <script type="text/javascript">
   function inputChanged() {
-    document.getElementById("input-output").innerHTML = document.getElementById("myinput").checked;
+    document.getElementById('input-output').innerHTML = document.getElementById('myinput').checked;
   }
 
   const darkModeToggleCode = `{% include_relative snippets/darkmode.html %}`;
   const simpleToggleCode = `{% include_relative snippets/simple.html %}`;
   const inputToggleCode = `{% include_relative snippets/input.html %}`;
 
-  const darkModeToggleHtml = Prism.highlight(darkModeToggleCode, Prism.languages.html, "html");
-  const simpleToggleHtml = Prism.highlight(simpleToggleCode, Prism.languages.html, "html");
-  const inputToggleHtml = Prism.highlight(inputToggleCode, Prism.languages.html, "html");
-  document.querySelector("#inputToggle").innerHTML = inputToggleHtml;
-  document.querySelector("#simpleToggle").innerHTML = simpleToggleHtml;
-  document.querySelector("#darkModeToggle").innerHTML = darkModeToggleHtml;
+  const darkModeToggleHtml = Prism.highlight(darkModeToggleCode, Prism.languages.html, 'html');
+  const simpleToggleHtml = Prism.highlight(simpleToggleCode, Prism.languages.html, 'html');
+  const inputToggleHtml = Prism.highlight(inputToggleCode, Prism.languages.html, 'html');
+  document.querySelector('#inputToggle').innerHTML = inputToggleHtml;
+  document.querySelector('#simpleToggle').innerHTML = simpleToggleHtml;
+  document.querySelector('#darkModeToggle').innerHTML = darkModeToggleHtml;
 </script>

@@ -17,8 +17,8 @@ header="Advanced Modal Usage" codeId="advanced" %}
   const basicCode = `{% include_relative snippets/basic.html %}`;
   const advancedCode = `{% include_relative snippets/advanced.html %}`;
 
-  const basicHtml = Prism.highlight(basicCode, Prism.languages.html, "html");
-  const advancedHtml = Prism.highlight(advancedCode, Prism.languages.html, "html");
-  document.querySelector("#basic").innerHTML = basicHtml;
-  document.querySelector("#advanced").innerHTML = advancedHtml;
+  const basicHtml = Prism.highlight(basicCode, Prism.languages.html, 'html');
+  const advancedHtml = Prism.highlight(advancedCode, Prism.languages.html, 'html');
+  document.querySelector('#basic').innerHTML = basicHtml;
+  document.querySelector('#advanced').innerHTML = advancedHtml;
 </script>

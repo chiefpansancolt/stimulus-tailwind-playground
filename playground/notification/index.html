@@ -42,21 +42,21 @@ codeId="manualDismissed" %}
   const autoDismissedCode = `{% include_relative snippets/auto.html %}`;
   const manualDismissedCode = `{% include_relative snippets/manual.html %}`;
 
-  const autoDismissedHtml = Prism.highlight(autoDismissedCode, Prism.languages.html, "html");
-  const manualDismissedHtml = Prism.highlight(manualDismissedCode, Prism.languages.html, "html");
-  document.querySelector("#autoDismissed").innerHTML = autoDismissedHtml;
-  document.querySelector("#manualDismissed").innerHTML = manualDismissedHtml;
+  const autoDismissedHtml = Prism.highlight(autoDismissedCode, Prism.languages.html, 'html');
+  const manualDismissedHtml = Prism.highlight(manualDismissedCode, Prism.languages.html, 'html');
+  document.querySelector('#autoDismissed').innerHTML = autoDismissedHtml;
+  document.querySelector('#manualDismissed').innerHTML = manualDismissedHtml;
 
   function createAutoDismissed() {
     document
-      .querySelector("#notification-container")
-      .insertAdjacentHTML("afterbegin", autoDismissedCode);
+      .querySelector('#notification-container')
+      .insertAdjacentHTML('afterbegin', autoDismissedCode);
   }
 
   function createManualDismissed() {
     document
-      .querySelector("#notification-container")
-      .insertAdjacentHTML("afterbegin", manualDismissedCode);
+      .querySelector('#notification-container')
+      .insertAdjacentHTML('afterbegin', manualDismissedCode);
   }
 
   function loading() {
@@ -65,6 +65,6 @@ codeId="manualDismissed" %}
   }
 
   window.addEventListener
-    ? window.addEventListener("load", loading, false)
-    : window.attachEvent && window.attachEvent("onload", loading);
+    ? window.addEventListener('load', loading, false)
+    : window.attachEvent && window.attachEvent('onload', loading);
 </script>

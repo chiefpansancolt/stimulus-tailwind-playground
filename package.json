@@ -31,7 +31,7 @@
   "homepage": "https://github.com/chiefpansancolt/stimulus-tailwind-playground#readme",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.13",
     "hint": "^7.1.11",
     "markdownlint": "^0.34.0",
     "prettier": "^3.2.5",

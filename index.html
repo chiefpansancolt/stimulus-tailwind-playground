@@ -12,7 +12,7 @@ sitemap:
   {% assign features = site.data.features | where: "released", "true" | sort: "order" %} {% for
   feature in features %}
   <li
-    class="col-span-1 divide-y divide-slate-200 rounded-lg bg-white shadow dark:divide-slate-800 dark:bg-slate-700"
+    class="col-span-1 divide-y divide-slate-200 rounded-lg bg-white shadow-sm dark:divide-slate-800 dark:bg-slate-700"
   >
     <div class="flex w-full items-center justify-between space-x-6 p-6">
       <div class="flex-1 truncate">
@@ -43,7 +43,7 @@ sitemap:
           {{ feature.details }}
         </p>
       </div>
-      <span class="inline-flex items-center justify-center rounded-full bg-emerald-500 p-2 shadow">
+      <span class="inline-flex items-center justify-center rounded-full bg-emerald-500 p-2 shadow-sm">
         {{ feature.icon }}
       </span>
     </div>

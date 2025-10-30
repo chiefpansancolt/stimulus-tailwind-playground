@@ -9,8 +9,8 @@
     "lint:ruby": "rubocop",
     "format": "prettier './**/*.{css,js,json,yml,md,html}' -l",
     "format:fix": "prettier './**/*.{css,js,json,yml,md,html}' -w",
-    "tailwind:build": "tailwindcss -c tailwind.config.js -i assets/application.css -o dist/tailwind.min.css -m",
-    "tailwind:watch": "tailwindcss -c tailwind.config.js -i assets/application.css -o dist/tailwind.min.css -m --watch",
+    "tailwind:build": "npx @tailwindcss/cli -i assets/application.css -o dist/tailwind.min.css -m",
+    "tailwind:watch": "npx @tailwindcss/cli -i assets/application.css -o dist/tailwind.min.css -m --watch",
     "dev": "bundle exec jekyll serve",
     "open": "open http://localhost:4000/stimulus-tailwind-components/",
     "webhint": "hint http://localhost:4000/stimulus-tailwind-playground/"
@@ -35,7 +35,7 @@
     "hint": "^7.1.11",
     "markdownlint": "^0.34.0",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.12",
-    "tailwindcss": "^3.4.1"
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "tailwindcss": "^4.1.16"
   }
 }

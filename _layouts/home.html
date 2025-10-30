@@ -5,11 +5,11 @@ layout: default
 <body class="h-full bg-gray-50 text-slate-500 dark:bg-slate-900 dark:text-slate-400">
   <script src="{{ '/dist/prism.min.js' | relative_url }}"></script>
   <div class="">
-    <header class="border-b border-slate-600 shadow-sm lg:static lg:overflow-y-visible">
+    <header class="border-b border-slate-600 shadow-xs lg:static lg:overflow-y-visible">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
           <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
-            <div class="flex flex-shrink-0 items-center">{% include logos.html %}</div>
+            <div class="flex shrink-0 items-center">{% include logos.html %}</div>
           </div>
           <div class="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6">
             <div
@@ -54,7 +54,7 @@ layout: default
             </div>
             <p class="mt-2 text-lg text-slate-700 dark:text-slate-400">{{ page.details }}</p>
           </header>
-          <section class="relative flex-grow">
+          <section class="relative grow">
             <div
               aria-live="assertive"
               class="pointer-events-none fixed inset-0 top-10 z-40 flex items-end px-4 py-6 sm:items-start sm:p-6"

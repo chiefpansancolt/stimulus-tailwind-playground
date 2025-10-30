@@ -10,10 +10,22 @@ url: https://stimulus-tailwind-play.chiefpansancolt.dev
 baseurl: /
 twitter_username: chiefpansancolt
 github_username: chiefpansancolt
+theme: null
+encoding: utf-8
 markdown: CommonMarkGhPages
 commonmark:
   extensions: ['strikethrough', 'autolink', 'table', 'tagfilter', 'tasklist']
 highlighter: rouge
+exclude:
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - tailwind.config.js
+sass:
+  style: compressed
+  sass_dir: _sass
 plugins:
   - jekyll-seo-tag
 

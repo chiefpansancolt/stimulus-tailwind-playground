@@ -34,11 +34,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: .ruby-version
-
-      - name: Install Ruby Gem dependencies
-        run: |
-          gem install bundler -v 2.6.9
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true
 
       - name: Run linters
         uses: wearerequired/lint-action@v2

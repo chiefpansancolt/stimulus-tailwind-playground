@@ -7,23 +7,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  Deploy-Production:
+  deploy-production:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 23
+          node-version: 24
+          cache: pnpm
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 10
-          run_install: false
-      
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -31,7 +29,8 @@ jobs:
 
       - name: Install Ruby Gem dependencies
         run: |
-          gem install bundler -v 2.4.22
+          gem install bundler -v 2.6.9
+          bundle install --jobs 4 --retry 3
 
       - name: Install Vercel CLI
         run: pnpm add --global vercel@latest

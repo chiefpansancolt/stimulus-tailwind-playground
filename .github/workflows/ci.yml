@@ -7,8 +7,7 @@ on:
     branches: [main]
 
 permissions:
-  checks: write
-  contents: write
+  contents: read
 
 jobs:
   lint:
@@ -36,8 +35,5 @@ jobs:
           ruby-version: .ruby-version
           bundler-cache: true
 
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          prettier: true
-          rubocop: true
+      - name: Lint
+        run: pnpm lint

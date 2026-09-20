@@ -40,13 +40,13 @@ layout: default
           <header class="relative z-20 h-36">
             <div>
               <p
-                class="mb-2 text-sm font-semibold leading-6 text-emerald-500 dark:text-emerald-400"
+                class="mb-2 text-sm leading-6 font-semibold text-emerald-500 dark:text-emerald-400"
               >
                 {{ page.header }}
               </p>
               <div class="flex items-center">
                 <h1
-                  class="inline-block text-2xl font-extrabold tracking-tight text-slate-900 dark:text-slate-200 sm:text-3xl"
+                  class="inline-block text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl dark:text-slate-200"
                 >
                   {{ page.subheader }}
                 </h1>
@@ -85,7 +85,7 @@ layout: default
           <footer class="sticky top-[90vh] pt-10 text-sm leading-6">
             {% if page.url != "/" %} {% include footer_nav.html %} {% endif %}
             <div
-              class="justify-between border-t border-slate-200 pt-10 text-slate-500 dark:border-slate-200/5 sm:flex"
+              class="justify-between border-t border-slate-200 pt-10 text-slate-500 sm:flex dark:border-slate-200/5"
             >
               <div class="mb-6 sm:mb-0 sm:flex">
                 <p>{{ site.copyright }}</p>

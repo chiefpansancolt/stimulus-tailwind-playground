@@ -1,6 +1,6 @@
 <li class="mt-12 lg:mt-8">
-  <h5 class="mb-8 font-semibold text-slate-900 dark:text-slate-200 lg:mb-3">Features</h5>
-  <ul class="space-y-6 border-l border-slate-100 dark:border-slate-800 lg:space-y-2">
+  <h5 class="mb-8 font-semibold text-slate-900 lg:mb-3 dark:text-slate-200">Features</h5>
+  <ul class="space-y-6 border-l border-slate-100 lg:space-y-2 dark:border-slate-800">
     {% for item in site.data.navigations.left_features %} {% if include.isDocs %} {% assign url =
     site.links.docs[item.url] %} {% else %} {% assign url = site.links.playground[item.url] %} {%
     endif %} {% if page.url contains url %} {% assign classes = "border-current font-semibold

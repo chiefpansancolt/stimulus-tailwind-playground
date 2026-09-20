@@ -31,11 +31,19 @@
   "homepage": "https://github.com/chiefpansancolt/stimulus-tailwind-playground#readme",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/typography": "^0.5.20",
     "hint": "^7.1.13",
-    "markdownlint": "^0.40.0",
-    "prettier": "^3.8.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.2.2"
+    "markdownlint": "^0.41.1",
+    "prettier": "^3.9.8",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "tar": "^7.5.21",
+      "tar-fs": "^2.1.4",
+      "ws": "^8.21.3",
+      "fast-xml-parser": "^5.7.0"
+    }
   }
 }

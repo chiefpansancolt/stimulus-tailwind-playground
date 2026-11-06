@@ -34,7 +34,7 @@
     "@tailwindcss/typography": "^0.5.20",
     "hint": "^7.1.13",
     "markdownlint": "^0.42.0",
-    "prettier": "^3.9.9",
+    "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3"
   }
